@@ -1,9 +1,8 @@
+import React from 'react'
 
-export const App = () => {
-    return (
-        <div>
-         TDl docs
-        </div>
-    );
-}
+export const App = () => (
+    <div>
+        TDl docs
+    </div>
+)
 
