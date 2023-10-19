@@ -1,10 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
 import React, { FC, ReactNode } from 'react'
+import { tasksReducer } from 'entities/task/slice'
 
 
 export const store = configureStore({
-    reducer: {},
+    reducer: {
+        tasks: tasksReducer,
+    },
 })
 
 type PropsType = {
