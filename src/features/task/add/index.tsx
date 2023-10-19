@@ -5,7 +5,6 @@ import { TitleModeEnum } from 'entities/task/slice/types'
 import { useCallback } from 'react'
 import { useDispatch } from 'react-redux'
 import { v4 as uuidv4 } from 'uuid'
-import { format} from 'date-fns'
 
 export const AddTask = () => {
     const dispatch = useDispatch()
@@ -15,7 +14,6 @@ export const AddTask = () => {
             taskTitle: '',
             mode: TitleModeEnum.Edit,
             done: false,
-            createdAt:format(new Date(),'dd MMM kk:mm'),
             id: uuidv4(),
         }))
     }, [])

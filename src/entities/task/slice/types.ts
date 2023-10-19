@@ -3,7 +3,7 @@ export type TaskType = {
     taskTitle: string
     done: boolean
     mode: TitleModeType
-    createdAt: string
+    createdAt?: string
 }
 
 export type TaskStateType = {

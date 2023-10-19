@@ -4,9 +4,10 @@ import { FC } from 'react'
 
 type PropsType = {
     onClick: () => void
+    error?: string | null
 }
-export const SaveTask: FC<PropsType> = ({ onClick }) => (
+export const SaveTask: FC<PropsType> = ({ onClick,error }) => (
         <Tooltip title='save'>
-            <Button onClick={onClick} type='text' shape='default' icon={<SaveOutlined />} />
+            <Button disabled={!!error} onClick={onClick} type='text' shape='default' icon={<SaveOutlined />} />
         </Tooltip>
     )
