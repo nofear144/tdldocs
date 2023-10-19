@@ -31,7 +31,7 @@ export const TaskView: FC<PropsType> = ({
         </Flex>
         <Flex justify='space-between'>
            <StyledTextError>{error && error}</StyledTextError>
-           <Typography>{createdAt ?? createdAt}</Typography>
+           <Typography>{createdAt ?? ''}</Typography>
         </Flex>
     </Flex>
 )
